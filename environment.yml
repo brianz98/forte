@@ -21,4 +21,8 @@ dependencies:
     - conda-forge::lcov
     - conda-forge::libint
     - conda-forge::libxc
+    - psi4::gau2grid
+    - conda-forge::qcelemental
+    - conda-forge::qcengine
+    - conda-forge::optking
 
