@@ -1,0 +1,22 @@
+name: forte
+
+dependencies:
+    - python=3.11
+    - pip
+    - pybind11
+    - cxx-compiler
+    - mkl
+    - cmake
+    - numpy
+    - scipy
+    - eigen
+    - pint
+    - pydantic
+    - pyyaml
+    - py-cpuinfo
+    - hdf5
+    - yaml
+    - pytest
+    - conda-forge::lcov
+    - conda-forge::libint
+
