@@ -55,7 +55,7 @@ jobs:
       run: |
         conda info
         conda list
-        export PYTHONPATH=$PYTHONPATH:$HOME/psi4/objdir/stage/lib
+        export PYTHONPATH=$PYTHONPATH:$HOME/psi4/objdir/stage/lib:$HOME/bin/ambit/lib
         export AMBITPATH=$HOME/bin/ambit
         export PATH=$PATH:$HOME/psi4/objdir/stage/bin
         cd $HOME/work/forte/forte
