@@ -33,9 +33,9 @@ jobs:
         cd $HOME
         git clone https://github.com/jturney/ambit.git
         cd ambit
-        cmake -H. -Bobjdir -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$HOME/bin/ambit -- -j 4
+        cmake -H. -Bobjdir -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$HOME/bin/ambit
         cd objdir
-        make -j 4
+        make -j4
         make install
 
     - name: Compile psi4
@@ -47,9 +47,9 @@ jobs:
         cd psi4
         git pull origin master --tags 
         git fetch origin "refs/tags/*:refs/tags/*"
-        cmake -H. -Bobjdir -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=$HOME/psi4bin -DENABLE_ecpint=ON -- -j 4
+        cmake -H. -Bobjdir -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=$HOME/psi4bin -DENABLE_ecpint=ON
         cd objdir
-        make -j 4
+        make -j4
 
     - name: Compile forte
       run: |
